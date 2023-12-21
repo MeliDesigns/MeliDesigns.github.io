@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.contenedor-nombre {
+    background-color: #DC9DA6;
+    height: 100px;
+    color: white;
+    text-align: center;
+}
+
+.contenedor-nombre .name {
+    padding-top: 5px;
+    font-family: 'Rouge Script', sans-serif;
+    font-size: 54px;
+}
+
+.contenedor-nombre .profesion {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-left: -5px;
+}
+
+.contenedor-foto {
+    background-color: #FAF5F2;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-foto .foto{
+    width: 500px;
+    height: auto;
+    margin: 40px 0;
+}
+
+.bio-links {
+    position: relative;
+    background-image: url('../img/2.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 325px;
+}
+
+.bio-links .navegacion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos verticalmente */
+    opacity: 1;
+    margin-top: 25px;
+}
+
+.navegacion a {
+    background-color: #DC9DA6;
+    width: 200px;
+    height: 45px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column; /* Alinea el contenido en columna */
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    margin-bottom: 12px; /* Ajusta el espacio entre los botones según tus necesidades */
+    line-height: 1.4; /* Ajusta la altura de línea según tus necesidades */
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(37, 37, 37, 0.1); /* Añade sombra al botón */
+}
+
+.navegacion a:hover{
+    background-color: #E48D99;
+}
+
+.bio-links .barra-beige {
+    background-color: #EDDBD3;
+    height: 30px;
+}
+
+.bio-links .barra-beige-2 {
+    background-color: #EDDBD3;
+    height: 30px;
+    margin-top: 292px;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 560px) {
+    .contenedor-foto .foto{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .contenedor-foto .foto{
+        width: 300px;
+        margin: 30px 0;
+    }
+}
